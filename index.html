@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Cars2go</title>
+</head>
+<body>
+  <header>
+    <h1>Honda Inquiry by Conrad Martinez</h1>
+  </header>
+
+<!-- ... (your existing code) -->
+
+<nav>
+  <a href="#" onclick="showHomeSection()">Home</a>
+  <a href="#" onclick="showAboutSection()">About</a>
+  <a href="#" onclick="showServicesSection()">Services</a>
+  <a href="#" onclick="showContactSection()">Contact</a>
+  <a href="#" onclick="showGallerySection()">Gallery</a>
+  <a href="#" onclick="showLoginModal()">Login</a>
+</nav>
+
+<section id="gallery-section" style="display: none;">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="gallery1.jpg" alt="Gallery Image 1">
+      <p>Honda RS Turbo 2021</p>
+    </div>
+    <div class="gallery-item">
+      <img src="gallery2.jpg" alt="Gallery Image 2">
+      <p>Honda RS Turbo 2020</p>
+    </div>
+    <div class="gallery-item">
+      <img src="gallery3.jpg" alt="Gallery Image 3">
+      <p>Honda RS Turbo 2019</p>
+    </div>
+    <!-- Add more gallery items as needed -->
+  </div>
+</section>
+
+  <section id="about-section" style="display: none;">
+	<h2>About Conrad</h2>
+    <p>Meet our dedicated Honda car sales professional, 
+      an automotive enthusiast with a profound passion for the brand. 
+      With an extensive understanding of Honda's diverse lineup, 
+      this expert delivers a personalized car-buying experience, 
+      showcasing the unique features and benefits of each model, 
+      from the sleek Civic to the versatile Pilot.</p>
+    <button onclick="closeAboutSection()">Close</button>
+  </section>
+  
+    <section id="services-section" style="display: none;">
+		<h2>Services I can offer</h2>
+    <p>Welcome to our comprehensive Honda car service center,
+	where we offer a range of specialized services to keep your
+	Honda running smoothly. Our routine maintenance services cover 
+	essential tasks such as timely oil changes, tire rotations, brake 
+	inspections, fluid checks, and battery maintenance. For repairs,
+	our skilled technicians conduct thorough engine diagnostics, address 
+	transmission issues, handle brake repairs, and ensure the optimal 
+	functioning of the suspension, steering, and electrical systems. 
+	If you're looking to personalize your Honda, our customization 
+	services include performance upgrades, exterior enhancements like 
+	body kits and paint jobs, interior upgrades such as upholstery and 
+	entertainment systems, and advanced lighting options. We also provide 
+	pre-purchase inspections for those considering a used Honda, offering 
+	detailed reports on the vehicle's condition. Our diagnostic services 
+	utilize advanced tools to troubleshoot complex issues, including 
+	check engine light diagnostics. Additionally, we offer scheduled 
+	maintenance packages, emergency repairs, software updates, and 
+	environmental services, emphasizing eco-friendly practices. Don't 
+	forget our detailing services, ensuring your Honda looks and feels 
+	brand new. Rest assured, our team of experts is dedicated to providing 
+	top-notch services tailored to your Honda's needs. Visit us for a 
+	seamless and reliable experience in maintaining and enhancing your Honda car.</p>
+		<button onclick="closeServicesSection()">Close</button>
+	</section>
+
+
+	<section id="contact-section" style="display: none;">
+		<h2>Contact Me</h2>
+		<p><br>Name: Conrad Martinez</br>
+			<br>Email: conradmartinez050@gmail.com</br>
+			<br>Contact: 09950774539</br></p>
+		<button onclick="closeContactSection()">Close</button>
+	</section>
+
+	
+	<section>
+    <div class="carousel">
+		<img src="image1.jpg" alt="Image 1">
+		<img src="image2.jpg" alt="Image 2">
+		<img src="image3.jpg" alt="Image 3">
+    </div>
+	</section>
+  
+    <section id="contact-form">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="button" onclick="showContactDetailsModal()">Submit</button>
+    </form>
+  </section>
+
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeLoginModal()">&times;</span>
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="button" onclick="login()">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
